@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:dt="http://www.thymeleaf.org/dandelion/datatables">
+<head>
+    <title>Admin-Dashboard</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/circle-chart.css" />
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/samrayner/bootstrap-side-navbar/gh-pages/assets/stylesheets/navbar-fixed-side.css" />
+    <link rel="stylesheet" href="css/housework.css" />
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="fixed-header" th:include="admin/nav-bar-header :: admin-header">
+			
+		</div>
+	</div>
+	<div class="row">
+		<div class="content-nav-panel">
+			<div class="col-md-2">
+				<div class="fixed-left-nav" th:include="admin/admin-left-nav :: admin-left-nav-fixed">
+				
+				</div>
+			</div>
+			<div class="col-md-10">
+				<div class="right-content-wrapper">
+					Right Content
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrapvalidator.min.js"></script>
+<script src="js/housework.js"></script>
+<script src="https://cdn.rawgit.com/ericprieto/simply-toast/master/simply-toast.min.js"></script>
+
+</body>
+</html>

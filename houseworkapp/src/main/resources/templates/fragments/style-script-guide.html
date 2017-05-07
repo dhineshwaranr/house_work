@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head th:fragment="headStyles">
+    <title>House Work</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/circle-chart.css" />
+    <link rel="stylesheet" href="css/housework.css" />
+</head>
+<body>
+    <div class="row header" id="header" th:fragment="admin-header">
+    	<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a><img src="images/logo.png"/></a>
+		      
+		    </div>
+		    <ul class="nav navbar-nav">
+		      <li><a href="#">Admin</a></li>
+		      <li><a href="#">Labour</a></li>
+		      <li><a href="#">Customer</a></li>
+		    </ul>
+		  </div>
+		</nav>
+    </div>
+    <div id="footer" th:fragment="footer">
+    	<h1>Footer</h1>
+    </div>
+    <div id="scripts" th:fragment="scripts">
+    	<script src="js/jquery-3.1.1.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrapvalidator.min.js"></script>
+		<script src="js/chart.bundle.js"></script>
+		<script src="js/housework.js"></script>
+    </div>
+    </body>
+    </html>
+    
